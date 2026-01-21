@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Pipeline Predictive Maintenance</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+<h1>Water Pipeline Health Monitoring</h1>
+
+<div class="container">
+    <label>Pressure (psi)</label>
+    <input type="number" id="pressure">
+
+    <label>Flow Rate (L/min)</label>
+    <input type="number" id="flow">
+
+    <label>Vibration Level</label>
+    <input type="number" id="vibration">
+
+    <label>Temperature(°C)</label>
+    <input type="number" id="temperature">
+    <audio id="alertSound">
+        <source src="alert.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <button onclick="checkPipeline()">Check Pipeline</button>
+
+    <h2 id="result"></h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
